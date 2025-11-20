@@ -1,51 +1,73 @@
-<html style="background-color: #272c2e;">
+<html>
   <head>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <style> body { margin: 0; } </style>
     <script src="//cdn.jsdelivr.net/npm/force-graph"></script>
     <!--<script src="../../dist/force-graph.js"></script>-->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div id="graph"></div>
 
-    <script>
-      fetch('./data/attunements.json').then(res => res.json()).then(data => {
-        const Graph = new ForceGraph(document.getElementById('graph'))
+    <div id="caption">
+      <h1>
+        Druid Confluence Map
+      </h1>
+      <p>
+        the ecosystem of Guild Wars' druid domains and locations<br>
+      </p>
+      <p id="fine">
+        (2025) Made by Deltise.7236 using <a href="https://github.com/vasturiano/force-graph">force-graph</a><br>
+        <a href="https://github.com/eb-del/gw-druid-diagram">source</a> - <a href="https://bsky.app/profile/ebdel.bsky.social">bluesky</a>
+      </p>
+    </div>
 
-        .graphData(data)
-        .nodeId('id')
+    <div id="graph">
+    </div>
 
-        .linkColor(() => 'rgba(255,255,255,0.2)')
 
-        .nodeCanvasObject((node, ctx, globalScale) => {
-          const label = node.id;
-          const fontSize = (12/globalScale) * node.scale;
-          ctx.font = `${fontSize}px Sans-Serif`;
-          const textWidth = ctx.measureText(label).width;
-          const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+    <script type="module">
 
-          ctx.fillStyle = 'rgba(255, 255, 255, 0.01)';
-          ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+      // Making the force-directed graph
+      fetch('../data/attunements.json').then(res => res.json()).then(data => {
+        const Graph = new ForceGraph(document.getElementById('graph'));
 
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'middle';
-          ctx.fillStyle = node.color;
-          ctx.fillText(label, node.x, node.y);
+        Graph
+          .graphData(data)
 
-          node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
-        })
+          .nodeId('id')
 
-        .nodePointerAreaPaint((node, color, ctx) => {
-          ctx.fillStyle = color;
-          const bckgDimensions = node.__bckgDimensions;
-          bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
-        });
+          //.d3Force('cluster', () => {})
+          //.cooldownTime(Infinity)
+
+          .linkColor(() => '#FFFFFF33')
+          .linkCurvature(0.05)
+
+          .nodeCanvasObject((node, ctx, globalScale) => {
+            const label = node.id;
+            const fontSize = (12/globalScale) * node.scale;
+            ctx.font = `${fontSize}px Sans-Serif`;
+            const textWidth = ctx.measureText(label).width;
+            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+
+            ctx.fillStyle = '#FFFFFF05';
+            ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillStyle = node.color;
+            ctx.fillText(label, node.x, node.y);
+
+            node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
+          })
+
+          .nodePointerAreaPaint((node, color, ctx) => {
+            ctx.fillStyle = color;
+            const bckgDimensions = node.__bckgDimensions;
+            bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+          });
 
       });
     </script>
   </body>
 </html>
-
-

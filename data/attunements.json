@@ -1,51 +1,75 @@
 {
   "nodes": [
-    {"id": "Rivers", "color": "white", "scale": 1.0},
-    {"id": "Streams", "color": "white", "scale": 1.0},
-    {"id": "Lakes", "color": "white", "scale": 1.0},
-    {"id": "Oceans", "color": "white", "scale": 1.0},
+    {"id": "Rivers", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Streams", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Lakes", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Oceans", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Lightning", "color": "white", "scale": 1.0},
-    {"id": "Winds", "color": "white", "scale": 1.0},
+    {"id": "Lightning", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Winds", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Waterfalls", "color": "white", "scale": 1.0},
-    {"id": "Rainfall", "color": "white", "scale": 1.0},
+    {"id": "Waterfalls", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Rainfall", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Wildfires", "color": "white", "scale": 1.0},
-    {"id": "Volcanoes", "color": "white", "scale": 1.0},
+    {"id": "Wildfires", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Volcanoes", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Snowfall", "color": "white", "scale": 1.0},
-    {"id": "Glaciers", "color": "white", "scale": 1.0},
+    {"id": "Snowfall", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Glaciers", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Tundra", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Hills", "color": "white", "scale": 1.0},
-    {"id": "Mountains", "color": "white", "scale": 1.0},
-    {"id": "Earthquakes", "color": "white", "scale": 1.0},
+    {"id": "Lichen", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Shrubs", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Chaparral", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Grasses", "color": "white", "scale": 1.0},
-    {"id": "Plains", "color": "white", "scale": 1.0},
-    {"id": "Floodplains", "color": "white", "scale": 1.0},
-    {"id": "Swamps", "color": "white", "scale": 1.0},
+    {"id": "Hills", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Mountains", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Earthquakes", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Islands", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Caves", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Canyons", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Fish", "color": "white", "scale": 1.0},
-    {"id": "Birds", "color": "white", "scale": 1.0},
+    {"id": "Sand", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Beaches", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Deserts", "color": "white", "scale": 1.0, "group": 1},
 
-    {"id": "Water", "color": "#3299fa", "scale": 2.0},
-    {"id": "Frost", "color": "#72e5f2", "scale": 2.0},
-    {"id": "Stone", "color": "#e9f272", "scale": 2.0},
-    {"id": "Storm", "color": "#d278ff", "scale": 2.0},
-    {"id": "Sun", "color": "#ffc74f", "scale": 2.0},
-    {"id": "Nature", "color": "#50eb5a", "scale": 2.0}
+    {"id": "Grasses", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Plains", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Floodplains", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Wetlands", "color": "white", "scale": 1.0, "group": 1},
+
+    {"id": "Trees", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Forests", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Rainforests", "color": "white", "scale": 1.0, "group": 1},
+
+    {"id": "Fish", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Birds", "color": "white", "scale": 1.0, "group": 1},
+
+    {"id": "Water", "color": "#3299fa", "scale": 2.0, "group": 2},
+    {"id": "Frost", "color": "#72e5f2", "scale": 2.0, "group": 2},
+    {"id": "Stone", "color": "#e9f272", "scale": 2.0, "group": 2},
+    {"id": "Storm", "color": "#d278ff", "scale": 2.0, "group": 2},
+    {"id": "Sun", "color": "#ffc74f", "scale": 2.0, "group": 2},
+    {"id": "Nature", "color": "#50eb5a", "scale": 2.0, "group": 2}
   ],
 
   "links": [
+
     {"source": "Water", "target": "Rivers"},
     {"source": "Rivers", "target": "Streams"},
 
     {"source": "Sun", "target": "Wildfires"},
-    {"source": "Storm", "target": "Wildfires"},
+    {"source": "Lightning", "target": "Wildfires"},
 
     {"source": "Nature", "target": "Birds"},
     {"source": "Winds", "target": "Birds"},
+
+    {"source": "Stone", "target": "Sand"},
+    {"source": "Sand", "target": "Deserts"},
+    {"source": "Sun", "target": "Deserts"},
+    {"source": "Sand", "target": "Beaches"},
+    {"source": "Oceans", "target": "Beaches"},
+    {"source": "Beaches", "target": "Islands"},
 
     {"source": "Stone", "target": "Mountains"},
     {"source": "Mountains", "target": "Hills"},
@@ -55,10 +79,28 @@
     {"source": "Frost", "target": "Snowfall"},
     {"source": "Storm", "target": "Snowfall"},
 
+    {"source": "Water", "target": "Glaciers"},
     {"source": "Frost", "target": "Glaciers"},
     {"source": "Stone", "target": "Glaciers"},
+    {"source": "Frost", "target": "Tundra"},
+    {"source": "Deserts", "target": "Tundra"},
 
     {"source": "Stone", "target": "Earthquakes"},
+    {"source": "Stone", "target": "Lichen"},
+    {"source": "Nature", "target": "Lichen"},
+    {"source": "Lichen", "target": "Shrubs"},
+    {"source": "Shrubs", "target": "Grasses"},
+    {"source": "Shrubs", "target": "Chaparral"},
+    {"source": "Wildfires", "target": "Chaparral"},
+    {"source": "Nature", "target": "Shrubs"},
+    {"source": "Grasses", "target": "Trees"},
+
+    {"source": "Stone", "target": "Islands"},
+    {"source": "Water", "target": "Islands"},
+    {"source": "Stone", "target": "Caves"},
+    {"source": "Water", "target": "Caves"},
+    {"source": "Stone", "target": "Canyons"},
+    {"source": "Rivers", "target": "Canyons"},
 
     {"source": "Sun", "target": "Volcanoes"},
     {"source": "Stone", "target": "Volcanoes"},
@@ -67,8 +109,15 @@
     {"source": "Water", "target": "Oceans"},
 
     {"source": "Nature", "target": "Grasses"},
+    {"source": "Sun", "target": "Grasses"},
     {"source": "Grasses", "target": "Plains"},
     {"source": "Plains", "target": "Hills"},
+
+    {"source": "Nature", "target": "Trees"},
+    {"source": "Sun", "target": "Trees"},
+    {"source": "Trees", "target": "Forests"},
+    {"source": "Forests", "target": "Rainforests"},
+    {"source": "Rainfall", "target": "Rainforests"},
 
     {"source": "Nature", "target": "Fish"},
     {"source": "Fish", "target": "Lakes"},
@@ -78,8 +127,11 @@
 
     {"source": "Rivers", "target": "Floodplains"},
     {"source": "Plains", "target": "Floodplains"},
-    {"source": "Floodplains", "target": "Swamps"},
+    {"source": "Floodplains", "target": "Wetlands"},
+    {"source": "Lakes", "target": "Wetlands"},
+    {"source": "Oceans", "target": "Wetlands"},
 
+    {"source": "Lightning", "target": "Volcanoes"},
     {"source": "Storm", "target": "Lightning"},
     {"source": "Storm", "target": "Winds"},
 
