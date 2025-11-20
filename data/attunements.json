@@ -1,65 +1,93 @@
 {
   "nodes": [
-    {"id": "Rivers", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Streams", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Lakes", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Oceans", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Rivers", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Streams", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Lakes", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Oceans", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Lightning", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Winds", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Lightning", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Winds", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Waterfalls", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Rainfall", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Waterfalls", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Rainfall", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Wildfires", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Volcanoes", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Wildfires", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Volcanoes", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Snowfall", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Glaciers", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Tundra", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Snowfall", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Glaciers", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Tundra", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Lichen", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Shrubs", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Chaparral", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Lichen", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Shrubs", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Chaparral", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Hills", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Mountains", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Earthquakes", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Islands", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Caves", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Canyons", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Hills", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Mountains", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Earthquakes", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Islands", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Caves", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Canyons", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Sand", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Beaches", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Deserts", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Sand", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Beaches", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Deserts", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Grasses", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Plains", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Floodplains", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Wetlands", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Grasses", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Plains", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Floodplains", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Wetlands", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Trees", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Forests", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Rainforests", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Trees", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Forests", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Rainforests", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Fish", "color": "white", "scale": 1.0, "group": 1},
-    {"id": "Birds", "color": "white", "scale": 1.0, "group": 1},
+    {"id": "Fish", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
+    {"id": "Birds", "color": "white", "scale": 1.0, "img": "https://wiki.guildwars2.com/images/e/ed/Hero_panel_story_journal_icon.png"},
 
-    {"id": "Water", "color": "#3299fa", "scale": 2.0, "group": 2},
-    {"id": "Frost", "color": "#72e5f2", "scale": 2.0, "group": 2},
-    {"id": "Stone", "color": "#e9f272", "scale": 2.0, "group": 2},
-    {"id": "Storm", "color": "#d278ff", "scale": 2.0, "group": 2},
-    {"id": "Sun", "color": "#ffc74f", "scale": 2.0, "group": 2},
-    {"id": "Nature", "color": "#50eb5a", "scale": 2.0, "group": 2}
+    {"id": "Elder Dragons", "color": "#f58a07", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Zhaitan", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Mordremoth", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Primordus", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Jormag", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Kralkatorrik", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+    {"id": "Soo-won", "color": "white", "scale": 1.5, "img": "https://wiki.guildwars2.com/images/4/46/Event_dragon_%28map_icon%29.png"},
+
+    {"id": "Conflagration", "color": "#fff419", "scale": 1.5, "img": "https://wiki.guildwars.com/images/7/75/Conflagration.jpg"},
+    {"id": "Famine", "color": "#fff419", "scale": 1.5, "img": "https://wiki.guildwars.com/images/d/d4/Famine.jpg"},
+    {"id": "Pestilence", "color": "#fff419", "scale": 1.5, "img": "https://wiki.guildwars.com/images/3/39/Pestilence.jpg"},
+
+    {"id": "Water", "color": "#3299fa", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/0/06/Water_Spirit.png"},
+    {"id": "Frost", "color": "#72e5f2", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/c/c6/Frost_Spirit.png"},
+    {"id": "Stone", "color": "#e9f272", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/3/35/Stone_Spirit.png"},
+    {"id": "Storm", "color": "#d278ff", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/2/25/Storm_Spirit.png"},
+    {"id": "Sun", "color": "#ffc74f", "scale": 2.0, "img": "https://wiki.guildwars2.com/images/d/dd/Sun_Spirit.png"},
+    {"id": "Nature", "color": "#50eb5a", "scale": 2.0, "img": "https://wiki.guildwars.com/images/7/73/Nature%27s_Renewal.jpg"}
   ],
 
   "links": [
 
+    {"source": "Elder Dragons", "target": "Zhaitan"},
+    {"source": "Elder Dragons", "target": "Mordremoth"},
+    {"source": "Elder Dragons", "target": "Primordus"},
+    {"source": "Elder Dragons", "target": "Jormag"},
+    {"source": "Elder Dragons", "target": "Kralkatorrik"},
+    {"source": "Elder Dragons", "target": "Soo-won"},
+
+    {"source": "Zhaitan", "target": "Pestilence"},
+    {"source": "Primordus", "target": "Conflagration"},
+    {"source": "Jormag", "target": "Frost"},
+    {"source": "Soo-won", "target": "Water"},
+
     {"source": "Water", "target": "Rivers"},
     {"source": "Rivers", "target": "Streams"},
 
-    {"source": "Sun", "target": "Wildfires"},
+    {"source": "Sun", "target": "Conflagration"},
+    {"source": "Conflagration", "target": "Wildfires"},
     {"source": "Lightning", "target": "Wildfires"},
+
+    {"source": "Nature", "target": "Famine"},
+    {"source": "Nature", "target": "Pestilence"},
 
     {"source": "Nature", "target": "Birds"},
     {"source": "Winds", "target": "Birds"},
@@ -102,7 +130,7 @@
     {"source": "Stone", "target": "Canyons"},
     {"source": "Rivers", "target": "Canyons"},
 
-    {"source": "Sun", "target": "Volcanoes"},
+    {"source": "Conflagration", "target": "Volcanoes"},
     {"source": "Stone", "target": "Volcanoes"},
 
     {"source": "Water", "target": "Lakes"},

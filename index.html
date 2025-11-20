@@ -14,10 +14,10 @@
         Druid Confluence Map
       </h1>
       <p>
-        the ecosystem of Guild Wars' druid domains and locations<br>
+        the hidden ecosystem of Guild Wars' nature magic (fanon)<br>
       </p>
       <p id="fine">
-        (2025) Made by Deltise.7236 using <a href="https://github.com/vasturiano/force-graph">force-graph</a><br>
+        (2025) made by Deltise.7236 using <a href="https://github.com/vasturiano/force-graph">force-graph</a><br>
         <a href="https://github.com/eb-del/gw-druid-diagram">source</a> - <a href="https://bsky.app/profile/ebdel.bsky.social">bluesky</a>
       </p>
     </div>
@@ -30,45 +30,75 @@
 
       // Making the force-directed graph
       fetch('./data/attunements.json').then(res => res.json()).then(data => {
-        const Graph = new ForceGraph(document.getElementById('graph'));
+        const Graph = new ForceGraph(document.getElementById('graph'))
 
-        Graph
           .graphData(data)
 
           .nodeId('id')
 
           //.d3Force('cluster', () => {})
-          //.cooldownTime(Infinity)
+          .cooldownTime(Infinity)
 
-          .linkColor(() => '#FFFFFF33')
+          .linkColor(() => '#ffffff33')
           .linkCurvature(0.05)
 
+          // Makes text
           .nodeCanvasObject((node, ctx, globalScale) => {
             const label = node.id;
             const fontSize = (12/globalScale) * node.scale;
+
+            const nimg = urlToImage(node.img);
+
             ctx.font = `${fontSize}px Sans-Serif`;
             const textWidth = ctx.measureText(label).width;
-            const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
 
-            ctx.fillStyle = '#FFFFFF05';
-            ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+            const bckgDimensions = [textWidth + fontSize, fontSize].map(n => n + fontSize * 0.4); // some padding
+            ctx.fillStyle = '#272c2e55';
+            //ctx.fillStyle = '#888888';
+            ctx.fillRect(
+              (node.x - bckgDimensions[0] / 2) + (textWidth / 2),
+              node.y - bckgDimensions[1] / 2,
+              ...bckgDimensions);
 
-            ctx.textAlign = 'center';
+            ctx.drawImage(
+              nimg,
+              node.x - fontSize / 2,
+              node.y - fontSize / 2,
+              fontSize,
+              fontSize);
+
+            ctx.textAlign = 'left';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = node.color;
-            ctx.fillText(label, node.x, node.y);
+            ctx.fillText(
+              label,
+              node.x + (fontSize / 2), // shift to make room for icon
+              node.y); // loads text
 
             node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
           })
 
+          // Makes text clickable
           .nodePointerAreaPaint((node, color, ctx) => {
             ctx.fillStyle = color;
+            const label = node.id;
             const bckgDimensions = node.__bckgDimensions;
-            bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
+            const textWidth = ctx.measureText(label).width;
+            bckgDimensions && ctx.fillRect(
+              (node.x - bckgDimensions[0] / 2) + (textWidth / 2),
+              node.y - bckgDimensions[1] / 2,
+              ...bckgDimensions);
           });
 
       });
+
+      // converts url stored in json to canvas image
+      function urlToImage(url) {
+        const img = new Image();
+        img.src = url;
+        return img;
+      }
+
     </script>
   </body>
 </html>
-
