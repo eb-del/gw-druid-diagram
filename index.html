@@ -29,7 +29,7 @@
     <script type="module">
 
       // Making the force-directed graph
-      fetch('../data/attunements.json').then(res => res.json()).then(data => {
+      fetch('./data/attunements.json').then(res => res.json()).then(data => {
         const Graph = new ForceGraph(document.getElementById('graph'));
 
         Graph
@@ -71,3 +71,4 @@
     </script>
   </body>
 </html>
+
