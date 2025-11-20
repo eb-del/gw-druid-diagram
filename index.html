@@ -11,7 +11,7 @@
     <div id="graph"></div>
 
     <script>
-      fetch('../data/attunements.json').then(res => res.json()).then(data => {
+      fetch('./data/attunements.json').then(res => res.json()).then(data => {
         const Graph = new ForceGraph(document.getElementById('graph'))
 
         .graphData(data)
@@ -48,3 +48,4 @@
     </script>
   </body>
 </html>
+
